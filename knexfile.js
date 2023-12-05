@@ -6,9 +6,14 @@
 module.exports = {
 
   development: {
-    client: 'sqlite3',
+    client: 'postgresql',
     connection: {
-      filename: './server/data/planner.db3'
+      host: "localhost",
+      port: 5432,
+      password: "Benoni951!",
+      database: "planner",
+      userName: "postgres"
+      //filename: './server/data/planner.db3'
     },
     migrations: {
       directory: "./server/data/migrations"
